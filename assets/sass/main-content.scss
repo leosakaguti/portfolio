@@ -1,0 +1,49 @@
+.menu {
+    min-height: 95vh;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 0 50px;
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        .profile-img {
+            width: 200px;
+            border-radius: 100px;
+        }
+
+        .profile-text {
+            .name {
+                padding-top: 10px;
+            }
+        }
+
+        .fa-github {
+            color: white;
+        }
+
+        .fa-github:hover {
+            color: rgb(216, 216, 216);
+        }
+    }
+    
+    .introduction {
+        padding-top: 20px;
+        
+        .skills {
+            .html > .progress { --bs-progress-bar-bg: #e34f26; }
+            
+            .skill-item {
+                .progress {
+                    --bs-progress-height: 1.8rem;
+                }
+            }
+        }
+
+    }
+}

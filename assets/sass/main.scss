@@ -1,0 +1,127 @@
+$light: #fff;
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../fontawesome-free-6.3.0-web/scss/fontawesome.scss';
+@import '../fontawesome-free-6.3.0-web/scss/solid.scss';
+@import '../fontawesome-free-6.3.0-web/scss/brands.scss';
+@import './main-content.scss';
+@import './projects.scss';
+
+$fa-font-path: '../fontawesome-free-6.3.0-web/webfonts';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    background-color: #1D3461;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 30px 0;
+
+    .container {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 20px;
+        padding: 30px 20px;
+        min-height: 80vh;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    gap: 2rem;
+    padding-top: 10rem;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-btns {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        
+        button {
+            --bs-btn-padding-y: .75rem;
+            --bs-btn-padding-x: 1.25rem; 
+            --bs-btn-font-size: .6rem;
+        }
+        
+    }
+}
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width:320px) {
+
+    .main {
+        flex-direction: column;
+
+        .profile {
+            align-items: center;
+
+            .social-media {
+                display: flex;
+                gap: 15px;
+            }
+        }
+
+        .skills {
+            padding: 30px 0;
+            .skills-items {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+                
+                div {
+                    padding: 5px 20px;
+                    border: 1px solid;
+                    border-radius: 5px;            
+                }
+        
+                .html {
+                    padding-left: 22px;
+                }
+            }
+        }
+    }
+
+    .introduction {
+        .about-me {
+            p {
+                font-size: 14px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    
+}
+
+@media only screen and (max-width:600px) {
+    
+}
+
+@media only screen and (max-width:801px) {
+    
+}
+
+@media only screen and (max-width:1025px) {
+    
+}
+
+@media only screen and (max-width:1281px) {
+    
+}
